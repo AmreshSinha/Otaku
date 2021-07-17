@@ -2,7 +2,7 @@
 
 `Otaku` is an open source Discord Music Bot.
 
-![Otaku GIF Demo](img/otaku.png)
+![Otaku GIF Demo](img/Otaku.png)
 
 Contents
 ========
