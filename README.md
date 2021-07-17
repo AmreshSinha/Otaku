@@ -71,6 +71,7 @@ I Still advise you to use the already hosted bot instead. Here's the [Invite Lin
 
 These are the Currently Usable Commands
 Music:
+
     + `!join`   Joins a voice channel
     + `!link`   Plays from a URL (Supported: https://bit.ly/3yYrdbc)
     + `!play`   Plays by Search
@@ -78,7 +79,9 @@ Music:
     + `!stop`   Stops and disconnects the bot from voice
     + `!stream` Streams from a url (same as yt, but doesn't predownload)
     + `!volume` Changes the player's volume
+    
 Random:
+
     + `!choose` Helps Selecting Between Words Randomly
     + `!random` Generates a Random Number between Input Number 1 and Input Number 2
     
