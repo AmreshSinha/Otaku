@@ -28,7 +28,7 @@ And is the first discord bot which I am maintaining.
 
 ### Invite Link
 
-<img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" /> | `https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white`
+[![Invite Link](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://apsweb.design/)
 
 ### Installation
 ---
