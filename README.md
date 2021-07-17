@@ -70,8 +70,8 @@ I Still advise you to use the already hosted bot instead. Here's the [Invite Lin
 ### Usage
 
 These are the Currently Usable Commands
-Music:
 
+Music:
     + `!join`   Joins a voice channel
     + `!link`   Plays from a URL (Supported: https://bit.ly/3yYrdbc)
     + `!play`   Plays by Search
@@ -81,7 +81,6 @@ Music:
     + `!volume` Changes the player's volume
     
 Random:
-
     + `!choose` Helps Selecting Between Words Randomly
     + `!random` Generates a Random Number between Input Number 1 and Input Number 2
     
