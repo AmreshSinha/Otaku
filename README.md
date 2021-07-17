@@ -45,7 +45,7 @@ Instead of hosting your own I recommend **inviting the Otaku bot to your server*
 
 [![Heroku Hosting Link](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://apsweb.design/)
 
-**Installing on VPS**
+**Installing on VPS(Ubuntu/Debian)**
 
 1. Clone the repository to your Local Machine
     + `$ git clone https://github.com/AmreshSinha/Otaku`
