@@ -43,7 +43,7 @@ Instead of hosting your own I recommend **inviting the Otaku bot to your server*
 
 **Heroku**
 
-<img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" /> | `https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white`
+[![Heroku Hosting Link](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://apsweb.design/)
 
 **Installing on VPS**
 
