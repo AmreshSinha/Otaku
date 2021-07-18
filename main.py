@@ -183,7 +183,7 @@ bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"),
 @bot.event
 async def on_ready():
     print('Logged in as {0} ({0.id})'.format(bot.user))
-    print('------')
+    print('------') #
 
 
 
