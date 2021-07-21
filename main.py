@@ -195,9 +195,9 @@ class Bot_Management(commands.Cog):
     async def donate(self, ctx):
         """Donation"""
 
-        embed=discord.Embed(title='Thanks for running this command!', description = results[0]['title'], color=0xc58c85)
+        embed=discord.Embed(title='Thanks for running this command!', color=0xc58c85)
         embed.add_field(name='Will add later! Till then Enjoy :)')
-        embed.add_field(name='HF :)', value=results[0]['channel'], inline=True)
+        embed.add_field(name='HF :)', inline=True)
         embed.set_thumbnail(url='https://media.giphy.com/media/S8qWh22ptNJNnEpBOf/giphy.gif')
         await ctx.send(embed=embed)
 
