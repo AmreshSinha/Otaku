@@ -203,4 +203,5 @@ async def on_ready():
 
 bot.add_cog(Music(bot))
 bot.add_cog(Random(bot))
+bot.add_cog(Bot_Management(bot))
 bot.run(os.environ.get('TOKEN'))
