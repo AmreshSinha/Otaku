@@ -1,5 +1,7 @@
 # Otaku
 
+[![Invite Link](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/oauth2/authorize?client_id=865261390578188308&permissions=2214068033&scope=bot)
+
 `Otaku` is an open source Discord Music Bot.
 
 ![Otaku GIF Demo](img/Otaku.png)
@@ -28,7 +30,7 @@ And is the first discord bot which I am maintaining.
 
 ### Invite Link
 
-[![Invite Link](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://apsweb.design/)
+[![Invite Link](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/oauth2/authorize?client_id=865261390578188308&permissions=2214068033&scope=bot)
 
 ### Installation
 ---
