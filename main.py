@@ -185,8 +185,7 @@ class Bot_Management(commands.Cog):
     async def ping(self, ctx):
         """No need to explain!"""
 
-        temp = bot.latency * 1000
-        if(temp > 100):
+        if(bot.latency * 1000 > 100):
             await ctx.send(f"Pong! {round(bot.latency * 1000)}ms (Whew. Donate to improve server performance!)")
         else:
             await ctx.send(f"Pong! {round(bot.latency * 1000)}ms")
