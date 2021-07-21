@@ -1,7 +1,7 @@
 import asyncio
 
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import discord
 from discord.embeds import Embed
 from discord.file import File
@@ -17,7 +17,7 @@ from youtube_dl import YoutubeDL
 import random
 import datetime
 
-load_dotenv('.env')
+# load_dotenv('.env')
 
 # Suppress noise about console usage from errors
 youtube_dl.utils.bug_reports_message = lambda: ''
@@ -189,4 +189,4 @@ async def on_ready():
 
 bot.add_cog(Music(bot))
 bot.add_cog(Random(bot))
-bot.run(os.getenv('TOKEN'))
+bot.run(os.environ.get('TOKEN'))
