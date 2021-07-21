@@ -177,6 +177,20 @@ class Random(commands.Cog):
     # @commands.command()
     # async def 
 
+class Bot_Management(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+    
+    @commands.command()
+    async def ping(self, ctx):
+        """No need to explain!"""
+
+        temp = bot.latency * 1000
+        if(temp > 100):
+            await ctx.send(f"Pong! {round(bot.latency * 1000)}ms (Whew. Donate to improve server performance!)")
+        else:
+            await ctx.send(f"Pong! {round(bot.latency * 1000)}ms")
+
 bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"),
                    description='Otaku Bot Commands:')
 
