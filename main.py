@@ -190,6 +190,16 @@ class Bot_Management(commands.Cog):
             await ctx.send(f"Pong! {round(bot.latency * 1000)}ms (Whew. Donate to improve server performance!)")
         else:
             await ctx.send(f"Pong! {round(bot.latency * 1000)}ms")
+    
+    @commands.command()
+    async def donate(self, ctx):
+        """Donation"""
+
+        embed=discord.Embed(title='Thanks for running this command!', description = results[0]['title'], color=0xc58c85)
+        embed.add_field(name='Will add later! Till then Enjoy :)')
+        embed.add_field(name='HF :)', value=results[0]['channel'], inline=True)
+        embed.set_thumbnail(url='https://media.giphy.com/media/S8qWh22ptNJNnEpBOf/giphy.gif')
+        await ctx.send(embed=embed)
 
 bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"),
                    description='Otaku Bot Commands:')
