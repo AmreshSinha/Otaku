@@ -60,9 +60,10 @@ Instead of hosting your own I recommend **inviting the Otaku bot to your server*
     + And paste your Discord Bot Token in it like
     + `TOKEN = "YOUR-DISCORD-BOT-TOKEN"` (Yes "" included)
 6. Ensure you have python 3.8 or above
-7. Now its time to run it
+7. Uncomment the `# from dotenv import load_dotenv` line and `# load_dotenv('.env')` line.
+8. Now its time to run it
     + `$ python3 main.py`
-8. If you accidentally close the Terminal then the bot will go down and you will have to repeat Step-7
+9. If you accidentally close the Terminal then the bot will go down and you will have to repeat Step-7
 9. To Avoid this you can use `Screen`. Google it for usage.
 
 I Still advise you to use the already hosted bot instead. Here's the [Invite Link](#invite-link).
@@ -83,6 +84,10 @@ These are the Currently Usable Commands
 2. Random:
     + `!choose` Helps Selecting Between Words Randomly
     + `!random` Generates a Random Number between Input Number 1 and Input Number 2
+
+3. Bot Management:
+    + `!donate` Donation
+    + `!ping`   Checks Server Ping
     
 ### Configuration
 
