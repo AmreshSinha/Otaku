@@ -107,4 +107,4 @@ These are the Currently Usable Commands
 ### Want to Contribute?
 ---
 
-Check our CONTRIBUTING Guidelines given in CONTRIBUTING.md
+Check our Contribution Guidelines given in CONTRIBUTING.md
