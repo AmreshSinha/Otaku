@@ -107,4 +107,4 @@ These are the Currently Usable Commands
 ### Want to Contribute?
 ---
 
-You can add your feature in your fork and make a Pull Request, I will check it out :)
+Check our CONTRIBUTING Guidelines given in CONTRIBUTING.md
