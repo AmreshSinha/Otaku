@@ -33,7 +33,6 @@ And is the first discord bot which I am maintaining.
 [![Invite Link](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/oauth2/authorize?client_id=865261390578188308&permissions=2214068033&scope=bot)
 
 ### Installation
----
 
 Instead of hosting your own I recommend **inviting the Otaku bot to your server**
 
@@ -105,6 +104,5 @@ These are the Currently Usable Commands
 5. etc
 
 ### Want to Contribute?
----
 
 Check our Contribution Guidelines given in CONTRIBUTING.md
