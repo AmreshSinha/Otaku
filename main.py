@@ -17,6 +17,36 @@ from youtube_dl import YoutubeDL
 import random
 import datetime
 
+#Global variables
+
+colours = [0xfc0303, 0xfc7303, 0xfcdf0, 0x88fc03, 0x03fc80, 0x03fcdb, 0x03b1fc,0x9d03fc, 0xd203fc, 0xfc03c6, 0xfc0303]
+
+features = ''':sparkles: **Welcome to Otaku** :sparkles:
+:music: **Music** :music:
+:one: !join : Joins a voice channel.
+:two: !link : Plays from a URL (Supported: https://bit.ly/3yYrdbc).
+:three: !play : Plays by Search.
+:four: !queue : Adds Song in Queue.
+:five: !stop : Stops and disconnects the bot from voice.
+:six: !stream : Streams from a url (same as yt, but doesn't predownload).
+:seven: !volume : Changes the player's volume.
+
+:game_dice: **Random** :game_dice:
+:one: !choose : Helps Selecting Between Words Randomly.
+:two: !random : Generates a Random Number between Input Number 1 and Input Number 2.
+
+:mechanic: **Bot Management** :mechanic:
+:one: !donate : Donation.
+:two: !ping : Checks Server Ping.
+:three: !help : Displays this command.
+
+:gear: **Currently Working On** :gear:
+:one: Queue Feature.
+:two: More Utility Features.
+:three: Fun Features.
+:four: Pause Feature.
+**MORE FEATURES COMING SOON**'''
+
 # load_dotenv('.env')
 
 # Suppress noise about console usage from errors
@@ -198,8 +228,22 @@ class Bot_Management(commands.Cog):
         embed.set_thumbnail(url='https://media.giphy.com/media/S8qWh22ptNJNnEpBOf/giphy.gif')
         await ctx.send(embed=embed)
 
-bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"),
-                   description='Otaku Bot Commands:')
+    @commands.command()
+    async def help(self, ctx):
+        """Custom help command"""
+        
+        user_name = str(ctx.author).split('#')[0]
+        my_embed = discord.Embed(title="Bot commands",
+                         description=features,
+                         color=colours[random.randrange(0, 10)])
+        my_embed.set_author(name=f"Hello {user_name}, here are my",
+                    icon_url=message.author.avatar_url)
+        my_embed.set_footer(text="Thanks for using Otaku ")
+        await ctx.send(embed = my_embed)#"in chat"
+        await ctx.author.send(embed = my_embed)#"By DM"
+        
+    bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"),
+                       description='Otaku Bot Commands:')
 
 @bot.event
 async def on_ready():
