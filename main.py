@@ -22,7 +22,7 @@ import datetime
 colours = [0xfc0303, 0xfc7303, 0xfcdf0, 0x88fc03, 0x03fc80, 0x03fcdb, 0x03b1fc,0x9d03fc, 0xd203fc, 0xfc03c6, 0xfc0303]
 
 features = ''':sparkles: **Welcome to Otaku** :sparkles:
-:music: **Music** :music:
+:musical_note: **Music** :musical_note:
 :one: !join : Joins a voice channel.
 :two: !link : Plays from a URL (Supported: https://bit.ly/3yYrdbc).
 :three: !play : Plays by Search.
@@ -31,7 +31,7 @@ features = ''':sparkles: **Welcome to Otaku** :sparkles:
 :six: !stream : Streams from a url (same as yt, but doesn't predownload).
 :seven: !volume : Changes the player's volume.
 
-:game_dice: **Random** :game_dice:
+:game_die: **Random** :game_die:
 :one: !choose : Helps Selecting Between Words Randomly.
 :two: !random : Generates a Random Number between Input Number 1 and Input Number 2.
 
@@ -71,6 +71,9 @@ ffmpeg_options = {
 }
 
 ytdl = youtube_dl.YoutubeDL(ytdl_format_options)
+
+bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"),description='Otaku Bot Commands:')
+bot.remove_command("help")
 
 class YTDLSource(discord.PCMVolumeTransformer):
     def __init__(self, source, *, data, volume=0.5):
@@ -242,8 +245,6 @@ class Bot_Management(commands.Cog):
         await ctx.send(embed = my_embed)#"in chat"
         await ctx.author.send(embed = my_embed)#"By DM"
         
-bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"),description='Otaku Bot Commands:')
-bot.remove_command("help")
 
 @bot.event
 async def on_ready():
