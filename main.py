@@ -240,7 +240,7 @@ class Bot_Management(commands.Cog):
                          description=features,
                          color=colours[random.randrange(0, 10)])
         my_embed.set_author(name=f"Hello {user_name}, here are my",
-                    icon_url=message.author.avatar_url)
+                    icon_url=ctx.author.avatar_url)
         my_embed.set_footer(text="Thanks for using Otaku ")
         await ctx.send(embed = my_embed)#"in chat"
         await ctx.author.send(embed = my_embed)#"By DM"
