@@ -242,8 +242,8 @@ class Bot_Management(commands.Cog):
         await ctx.send(embed = my_embed)#"in chat"
         await ctx.author.send(embed = my_embed)#"By DM"
         
-    bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"),
-                       description='Otaku Bot Commands:')
+bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"),description='Otaku Bot Commands:')
+bot.remove_command("help")
 
 @bot.event
 async def on_ready():
