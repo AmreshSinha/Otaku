@@ -72,9 +72,6 @@ ffmpeg_options = {
 
 ytdl = youtube_dl.YoutubeDL(ytdl_format_options)
 
-bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"),description='Otaku Bot Commands:')
-bot.remove_command("help")
-
 class YTDLSource(discord.PCMVolumeTransformer):
     def __init__(self, source, *, data, volume=0.5):
         super().__init__(source, volume)
@@ -244,7 +241,8 @@ class Bot_Management(commands.Cog):
         my_embed.set_footer(text="Thanks for using Otaku ")
         await ctx.send(embed = my_embed)#"in chat"
         await ctx.author.send(embed = my_embed)#"By DM"
-        
+       
+bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"),description='Otaku Bot Commands:',help_command = None)
 
 @bot.event
 async def on_ready():
